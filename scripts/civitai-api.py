@@ -103,22 +103,22 @@ def make_new_folder(content_type, use_new_folder, model_name, lora_old):
         folder = "embeddings"
         new_folder = "embeddings/new"
     elif content_type == "AestheticGradient":
-        folder = "extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
-        new_folder = "extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings/new"
+        folder = "extensions/undercover-aesthetic-gradients/aesthetic_embeddings"
+        new_folder = "extensions/undercover-aesthetic-gradients/aesthetic_embeddings/new"
     elif content_type == "VAE":
         folder = "models/VAE"
         new_folder = "models/VAE/new"
     elif content_type == "LORA":
         if lora_old:
-            folder = "extensions/sd-webui-additional-networks/models/lora"
-            new_folder = "extensions/sd-webui-additional-networks/models/lora/new"
+            folder = "extensions/undercover-additional-networks/models/lora"
+            new_folder = "extensions/undercover-additional-networks/models/lora/new"
         else:
             folder = "models/Lora"
             new_folder = "models/Lora/new"
     elif content_type == "LoCon":
         if lora_old:
-            folder = "extensions/sd-webui-additional-networks/models/lora"
-            new_folder = "extensions/sd-webui-additional-networks/models/lora/new"
+            folder = "extensions/undercover-additional-networks/models/lora"
+            new_folder = "extensions/undercover-additional-networks/models/lora/new"
         else:
             folder = "models/Lora"
             new_folder = "models/Lora/new"
